@@ -43,8 +43,6 @@ public class TeleOpNew extends LinearOpMode {
 
             drive.fieldCentricUsingGamePad(gamepad1);
 
-
-
             telemetry.addData("distans", intake.getDistanceSensor().senseGamePiece());
 
             double stickPosition = -gamepad2.left_stick_y;
