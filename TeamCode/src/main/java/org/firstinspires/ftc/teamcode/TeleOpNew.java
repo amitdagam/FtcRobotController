@@ -119,7 +119,6 @@ public class TeleOpNew extends LinearOpMode {
                 robotState = "IDLE";
             }
 
-
             if (gamepad1.a) {
                 intake.intakespeed(-1);
             }
