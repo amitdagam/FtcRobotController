@@ -21,7 +21,6 @@ public class DriveTeleOp {
     private IMU imu;
     private Telemetry telemetry;
 
-
     // define constructor
     public DriveTeleOp(HardwareMap hardwareMap, Telemetry telemetry) {
         // map motors to hardware
