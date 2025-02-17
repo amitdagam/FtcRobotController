@@ -131,6 +131,7 @@ public class TeleOpNew extends LinearOpMode {
                 intake.setintake();
 
             }
+
             if (robotState == "INTAKE" && intake.getDistanceSensor().senseGamePiece()) {
                 intake.stopIntake();
 //                arm.armSetSetPoint(SPECIMEN);
