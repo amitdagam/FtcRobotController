@@ -14,7 +14,6 @@ public class intake {
     private CRServo master;
     private CRServo slave;
     private Distance distanceSensor;
-
     private TouchSensor touchIntake;
 
     // define the constructor
