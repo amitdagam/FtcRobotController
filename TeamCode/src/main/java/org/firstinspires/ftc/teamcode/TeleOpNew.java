@@ -62,8 +62,8 @@ public class TeleOpNew extends LinearOpMode {
                     motor2.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
 
-                    motor1.setPower(stickPosition * 0.8);
-                    motor2.setPower(stickPosition * 0.8);
+                    motor1.setPower(stickPosition);
+                    motor2.setPower(stickPosition);
 
                     targetPosition = motor1.getCurrentPosition();
                     telemetry.addData("current position:", targetPosition);
@@ -175,10 +175,13 @@ public class TeleOpNew extends LinearOpMode {
 
 
 
-
+//        public void armSetPower(double power){
+//            master.setPower(power + getFeedForward1(((master.getCurrentPosition() / 288f ) * 360f)));
+//            slave.setPower(power + getFeedForward1(((master.getCurrentPosition() / 288f ) * 360f)));
+//        }
 
     }
     public double getFeedForward(double current) {
-        return Math.sin(Math.toRadians(current) + 20) * 0.38;}
+        return Math.sin(Math.toRadians(current) + 20) * 0.28;}
 }
 //0.32v

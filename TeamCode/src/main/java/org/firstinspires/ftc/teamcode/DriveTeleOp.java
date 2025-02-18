@@ -90,9 +90,9 @@ public class DriveTeleOp {
         double rx = -gamepad.right_stick_x;
 
         if (gamepad.right_trigger > 0.05){
-          y = y * 0.4;
-          x = x * 0.4;
-          rx = rx * 0.4;
+          y = y * 0.25;
+          x = x * 0.25;
+          rx = rx * 0.25;
         }
          
 
